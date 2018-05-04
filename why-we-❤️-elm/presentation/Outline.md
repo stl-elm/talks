@@ -1,0 +1,16 @@
+- The Elm Architecture
+- No null
+- Union Types
+	- Maybe
+	- Result
+	- RemoteData
+	- ...
+- No Runtime Exception
+- Refactoring
+- Helpful Compiler Error Message
+- Focus on Simplicity
+- Battery Included
+- Elm Format
+- Enforced Semantic Version
+- Friendly Community
+- JSON Decoder/Encoder
