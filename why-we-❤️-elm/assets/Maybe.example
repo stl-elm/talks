@@ -1,0 +1,12 @@
+type Maybe something
+	= Nothing
+	| Just something
+
+
+selectedFruit : Maybe Fruit
+selectedFruit =
+	Nothing
+
+favoriteFruit : Maybe Fruit
+favoriteFruit =
+	Just Apple

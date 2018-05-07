@@ -1,0 +1,9 @@
+type Fruit 
+	= Apple
+	| Mango
+	| Orange
+
+type Shape
+    = Square { side : Float }
+    | Rectangle { width : Float, height : Float }
+    | Circle { radius : Float }

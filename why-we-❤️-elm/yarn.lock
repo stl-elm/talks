@@ -1528,6 +1528,14 @@ clipboard@^1.5.5:
     select "^1.1.2"
     tiny-emitter "^2.0.0"
 
+clipboard@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/clipboard/-/clipboard-2.0.1.tgz#a12481e1c13d8a50f5f036b0560fe5d16d74e46a"
+  dependencies:
+    good-listener "^1.2.2"
+    select "^1.1.2"
+    tiny-emitter "^2.0.0"
+
 cliui@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/cliui/-/cliui-2.1.0.tgz#4b475760ff80264c762c3a1719032e91c7fea0d1"
@@ -4679,6 +4687,12 @@ prepend-http@^1.0.0:
 preserve@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
+
+prismjs@1.12.0:
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.12.0.tgz#5edbc56096789c9d11b7e16cc84e8c8d4fc85613"
+  optionalDependencies:
+    clipboard "^2.0.0"
 
 prismjs@^1.6.0:
   version "1.8.4"

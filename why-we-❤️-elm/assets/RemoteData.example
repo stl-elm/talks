@@ -1,0 +1,5 @@
+type RemoteData error value
+	= NotAsked
+	| Loading
+	| Failure error
+	| Success value
