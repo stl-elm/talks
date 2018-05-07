@@ -106,11 +106,12 @@ export default class Presentation extends React.Component {
           />
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary">
-          <Heading size={1} textColor="tertiary">RemoteData</Heading>
+          <Heading size={4} textColor="tertiary">RemoteData</Heading>
           <CodePane
             lang="elm"
             source={require('raw-loader!../assets/RemoteData.example')}
             margin="20px auto"
+            style={{fontSize: "9px"}}
             overflow="overflow"
           />
         </Slide>

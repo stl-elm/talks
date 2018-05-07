@@ -1,12 +1,13 @@
 type Maybe something
-	= Nothing
-	| Just something
+    = Nothing
+    | Just something
 
 
-selectedFruit : Maybe Fruit
-selectedFruit =
-	Nothing
+view : Maybe Fruit -> Html msg
+view favoriteFruit =
+    case maybeFruit of
+        Nothing -> 
+            Html.text "You don't have any favorite fruit"
 
-favoriteFruit : Maybe Fruit
-favoriteFruit =
-	Just Apple
+        Just fruit ->
+            Html.text ("You like " ++ toString fruit)

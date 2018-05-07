@@ -1,7 +1,7 @@
 type Fruit 
-	= Apple
-	| Mango
-	| Orange
+    = Apple
+    | Mango
+    | Orange
 
 type Shape
     = Square { side : Float }

@@ -1,11 +1,11 @@
 type Result error value
-	= Ok value
-	| Err error
+    = Ok value
+    | Err error
 
 
 produceApple : Result String Fruit
 produceApple =
-	if harvestSuccessful then
-		Ok Apple
-	else 
-		Err "Unable to product apple"
+    if harvestSuccessful then
+        Ok Apple
+    else 
+        Err "Unable to product apple"

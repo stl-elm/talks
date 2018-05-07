@@ -1,5 +1,21 @@
 type RemoteData error value
-	= NotAsked
-	| Loading
-	| Failure error
-	| Success value
+    = NotAsked
+    | Loading
+    | Failure error
+    | Success value
+
+
+view : RemoteData String Fruit -> Html msg
+view fruitData =
+    case fruitData of
+        NotAsked ->
+            Html.text "Initializing..."
+
+        Loading ->
+            loadingIndicator "Loading..."
+
+        Failure errorMessage ->
+            errorDialog errorMessage
+
+        Success fruit ->
+            fruitView fruit
