@@ -31,6 +31,8 @@ require("normalize.css");
 const images = {
   TEA: require('../assets/TEA.png'),
   stlelm: require('../assets/stl-elm.jpg'),
+  compilerError1: require('../assets/compiler-error1.png'),
+  compilerError2: require('../assets/compiler-error2.png'),
 };
 
 preloader(images);
@@ -40,7 +42,8 @@ const theme = createTheme({
   secondary: "#5A6378", //gray
   tertiary: "#60B5CC", // blue
   quarternary: "#7FD13B", // green
-  quinary: "#F0AD00" // yellow
+  quinary: "#F0AD00", // yellow
+  black: "#000"
 }, {
   primary: "Montserrat",
   secondary: "Helvetica"
@@ -118,6 +121,7 @@ export default class Presentation extends React.Component {
          <Slide transition={["fade"]} bgColor="secondary">
           <Heading size={4} textColor="tertiary">The Elm Architecture</Heading>
           <Image src={images.TEA}/>
+          <Text style={{fontSize: "16px", textAlign: "right"}}>Credit: https://twitter.com/01k</Text>
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary">
           <Heading size={1} textColor="tertiary">Refactor without Fear</Heading>
@@ -125,7 +129,13 @@ export default class Presentation extends React.Component {
         <Slide transition={["fade"]} bgColor="secondary">
           <Heading margin="0 0 .25em 0" size={1} textColor="tertiary">Helpful Compiler</Heading>
         </Slide>
-        <Slide transition={["fade"]} bgColor="secondary">
+        <Slide transition={["fade"]} bgColor="black">
+          <Image src={images.compilerError1} width="85%"/>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="black">
+          <Image src={images.compilerError2} width="100%"/>
+        </Slide>
+         <Slide transition={["fade"]} bgColor="secondary">
           <Heading size={1} textColor="tertiary">Focus on Simplicity</Heading>
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary">
@@ -136,12 +146,14 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary">
           <Heading size={1} textColor="tertiary">Friendly Community</Heading>
+          <Heading margin="1em 0 0 0" size={6} textColor="primary">http://elmlang.herokuapp.com</Heading>
+          <Heading size={6} textColor="primary">https://discourse.elm-lang.org</Heading>
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary">
-          <Heading size={1} textColor="tertiary">What Do You Think?</Heading>
+          <Heading size={2} textColor="tertiary">How about you?</Heading>
         </Slide>
         <Slide transition={["fade"]} bgColor="primary">
-          <Heading size={1} textColor="secondary">Code Night</Heading>
+          <Heading size={1} textColor="secondary">Let's Learn Elm</Heading>
           <Heading margin="1em 0 0 0" size={6} textColor="tertiary">https://elmbridge.github.io/curriculum/</Heading>
         </Slide>
      </Deck>
