@@ -12,7 +12,10 @@ import {
   Slide,
   Text,
   Image,
-  Layout
+  Layout,
+  List,
+  ListItem,
+  Link
 } from "spectacle";
 
 // Import theme
@@ -79,6 +82,22 @@ export default class Presentation extends React.Component {
           <Heading size={1} textColor="tertiary">
             What is Elm?
           </Heading>
+          <List textColor="primary">
+            <ListItem>Functional Language</ListItem>
+            <ListItem>Compiled to JavaScript</ListItem>
+            <ListItem>Building realiable web applications</ListItem>
+          </List>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="secondary" textColor="tertiary">
+          <CodePane
+            lang="elm"
+            source={require("raw-loader!../assets/Example.example")}
+            style="font-size: 16px;margin-top: -120px;"
+            overflow="overflow"
+          />
+          <a href="https://ellie-app.com/RrrWkGVrS6a1" target="_blank">
+            https://ellie-app.com/RrrWkGVrS6a1
+          </a>
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary" textColor="tertiary">
           <Heading size={1} textColor="tertiary">
