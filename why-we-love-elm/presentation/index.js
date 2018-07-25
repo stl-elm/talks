@@ -91,12 +91,12 @@ export default class Presentation extends React.Component {
         <Slide transition={["fade"]} bgColor="secondary" textColor="tertiary">
           <CodePane
             lang="elm"
-            source={require("raw-loader!../assets/Example.example")}
-            style="font-size: 16px;margin-top: -120px;"
+            source={require("raw-loader!../assets/Simple.example")}
+            style="font-size: 20px;margin-top: -140px;"
             overflow="overflow"
           />
-          <a href="https://ellie-app.com/RrrWkGVrS6a1" target="_blank">
-            https://ellie-app.com/RrrWkGVrS6a1
+          <a href="https://ellie-app.com/S885VkPNsQa1" target="_blank">
+            https://ellie-app.com/S885VkPNsQa1
           </a>
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary" textColor="tertiary">
@@ -113,7 +113,9 @@ export default class Presentation extends React.Component {
               I call it my billion-dollar mistake. It was the invention of the
               null reference in 1965.
             </Quote>
-            <Cite textColor="quarternary">Tony Hoare</Cite>
+            <Cite textColor="quarternary">
+              Tony Hoare -- Designer of ALGOL W
+            </Cite>
           </BlockQuote>
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary" textColor="tertiary">
@@ -153,9 +155,22 @@ export default class Presentation extends React.Component {
           />
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary">
-          <Heading size={4} textColor="tertiary">
+          <Heading size={1} textColor="tertiary">
             The Elm Architecture
           </Heading>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="secondary" textColor="tertiary">
+          <CodePane
+            lang="elm"
+            source={require("raw-loader!../assets/TEA.example")}
+            style="font-size: 16px;margin-top: -120px;"
+            overflow="overflow"
+          />
+          <a href="https://ellie-app.com/RrrWkGVrS6a1" target="_blank">
+            https://ellie-app.com/RrrWkGVrS6a1
+          </a>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="secondary">
           <Image src={images.TEA} />
           <Text style={{ fontSize: "16px", textAlign: "right" }}>
             Credit: https://twitter.com/01k

@@ -1,0 +1,26 @@
+module Main exposing (main)
+
+import Html exposing (body, footer, h1, header, main_, p, text)
+
+
+main =
+    body []
+        [ myHeader "This is my website"
+        , myMain
+        , myFooter "Made for jSTL © 2018"
+        ]
+
+
+myHeader title =
+    header [] [ h1 [] [ text title ] ]
+
+
+myMain =
+    main_ []
+        [ p []
+            [ text "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet dapibus tortor, nec hendrerit mauris. Quisque dapibus lobortis elit eget faucibus. Nulla facilisi. Nunc accumsan ultricies nisl, sit amet iaculis sapien condimentum non." ]
+        ]
+
+
+myFooter content =
+    footer [] [ text content ]
