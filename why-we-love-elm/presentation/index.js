@@ -67,28 +67,25 @@ export default class Presentation extends React.Component {
           </Layout>
         </Slide>
         <Slide transition={["fade"]} bgColor="primary">
-          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Why We ❤️ Elm
-          </Heading>
-          <Heading textColor="tertiary" size={3}>
-            An Intro to Elm
+          <Heading textColor="tertiary" size={1}>
+            Intro to Elm
           </Heading>
           <Text margin="2em 0 1em 0" textColor="secondary">
             Abadi Kurniawan (slack: @abadi199)<br />
             Chris Marfia (slack: @cmarfia)<br />
           </Text>
         </Slide>
-        <Slide transition={["fade"]} bgColor="secondary" textColor="tertiary">
+        <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
           <Heading size={1} textColor="tertiary">
             What is Elm?
           </Heading>
-          <List textColor="primary">
+          <List textColor="secondary">
             <ListItem>Functional Language</ListItem>
             <ListItem>Compiled to JavaScript</ListItem>
             <ListItem>Building realiable web applications</ListItem>
           </List>
         </Slide>
-        <Slide transition={["fade"]} bgColor="secondary" textColor="tertiary">
+        <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
           <CodePane
             lang="elm"
             source={require("raw-loader!../assets/Simple.example")}
@@ -99,12 +96,17 @@ export default class Presentation extends React.Component {
             https://ellie-app.com/S885VkPNsQa1
           </a>
         </Slide>
-        <Slide transition={["fade"]} bgColor="secondary" textColor="tertiary">
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Why We ❤️ Elm
+          </Heading>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
           <Heading size={1} textColor="tertiary">
             No Runtime Exception
           </Heading>
         </Slide>
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+        <Slide transition={["fade"]} bgColor="primary" textColor="primary">
           <Heading size={1} textColor="tertiary">
             No Null Reference
           </Heading>
@@ -118,7 +120,7 @@ export default class Presentation extends React.Component {
             </Cite>
           </BlockQuote>
         </Slide>
-        <Slide transition={["fade"]} bgColor="secondary" textColor="tertiary">
+        <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
           <Heading size={1} textColor="tertiary">
             Union Types
           </Heading>
@@ -130,7 +132,7 @@ export default class Presentation extends React.Component {
             overflow="overflow"
           />
         </Slide>
-        <Slide transition={["fade"]} bgColor="secondary">
+        <Slide transition={["fade"]} bgColor="primary">
           <Heading size={1} textColor="tertiary">
             Maybe
           </Heading>
@@ -142,7 +144,7 @@ export default class Presentation extends React.Component {
             overflow="overflow"
           />
         </Slide>
-        <Slide transition={["fade"]} bgColor="secondary">
+        <Slide transition={["fade"]} bgColor="primary">
           <Heading size={1} textColor="tertiary">
             Result
           </Heading>
@@ -154,12 +156,12 @@ export default class Presentation extends React.Component {
             overflow="overflow"
           />
         </Slide>
-        <Slide transition={["fade"]} bgColor="secondary">
+        <Slide transition={["fade"]} bgColor="primary">
           <Heading size={1} textColor="tertiary">
             The Elm Architecture
           </Heading>
         </Slide>
-        <Slide transition={["fade"]} bgColor="secondary" textColor="tertiary">
+        <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
           <CodePane
             lang="elm"
             source={require("raw-loader!../assets/TEA.example")}
@@ -170,18 +172,18 @@ export default class Presentation extends React.Component {
             https://ellie-app.com/RrrWkGVrS6a1
           </a>
         </Slide>
-        <Slide transition={["fade"]} bgColor="secondary">
+        <Slide transition={["fade"]} bgColor="primary">
           <Image src={images.TEA} />
           <Text style={{ fontSize: "16px", textAlign: "right" }}>
             Credit: https://twitter.com/01k
           </Text>
         </Slide>
-        <Slide transition={["fade"]} bgColor="secondary">
+        <Slide transition={["fade"]} bgColor="primary">
           <Heading size={1} textColor="tertiary">
             Refactor without Fear
           </Heading>
         </Slide>
-        <Slide transition={["fade"]} bgColor="secondary">
+        <Slide transition={["fade"]} bgColor="primary">
           <Heading margin="0 0 .25em 0" size={1} textColor="tertiary">
             Helpful Compiler
           </Heading>
@@ -192,22 +194,22 @@ export default class Presentation extends React.Component {
         <Slide transition={["fade"]} bgColor="black">
           <Image src={images.compilerError2} width="100%" />
         </Slide>
-        <Slide transition={["fade"]} bgColor="secondary">
+        <Slide transition={["fade"]} bgColor="primary">
           <Heading size={1} textColor="tertiary">
             Focus on Simplicity
           </Heading>
         </Slide>
-        <Slide transition={["fade"]} bgColor="secondary">
+        <Slide transition={["fade"]} bgColor="primary">
           <Heading size={1} textColor="tertiary">
             Elm Format
           </Heading>
         </Slide>
-        <Slide transition={["fade"]} bgColor="secondary">
+        <Slide transition={["fade"]} bgColor="primary">
           <Heading size={1} textColor="tertiary">
             Enforced Semantic Versioning
           </Heading>
         </Slide>
-        <Slide transition={["fade"]} bgColor="secondary">
+        <Slide transition={["fade"]} bgColor="primary">
           <Heading size={1} textColor="tertiary">
             Friendly Community
           </Heading>
